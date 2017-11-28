@@ -7,7 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "merge:master": "git checkout master && git merge develop && git push",
+    "merge": "npm run merge:master",
+    "checkout": "git checkout develop",
+    "publish": "npm run merge && bower register kul-widget https://github.com/kwantu/kul-widget.git && npm run checkout"
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,10 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kwantu/kul-widget/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "systemjs-plugin-babel": "0.0.25"
   },
   "homepage": "https://github.com/kwantu/kul-widget#readme"
 }
