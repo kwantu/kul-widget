@@ -1,0 +1,26 @@
+{
+  "name": "@kwantu/kul-widget",
+  "version": "1.0.0",
+  "description": "Kwantu User interface Language Widget Element",
+  "main": "kul-widget.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwantu/kul-widget.git"
+  },
+  "keywords": [
+    "kwantu",
+    "widget"
+  ],
+  "author": "Brent Gordon <brentgordon01@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwantu/kul-widget/issues"
+  },
+  "homepage": "https://github.com/kwantu/kul-widget#readme"
+}

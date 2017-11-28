@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+	<title>KUL Widget Demo</title>
+	<script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+	<link rel="import" href="../../polymer/lib/elements/dom-bind.html">
+	<link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+	<link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+	<script src="../../lodash/dist/lodash.min.js"></script>
+	<link rel="import" href="../kul-widget.html">
+	<script src="/bower_components/utils/dist/utils.min.js"></script>
+	<style is="custom-style" include="demo-pages-shared-styles"></style>
+</head>
+
+<body>
+	<div class="vertical-section-container centered">
+		<h3>KUL Widget Demo</h3>
+		<demo-snippet>
+			<template>
+				<dom-bind>
+					<template>
+						<kul-widget component="demo" config-id="{{configId}}" model-id="{{modelId}}"></kul-widget>
+					</template>
+				</dom-bind>
+				<script>
+					// This code should be part of the application you're using
+					// the kul-widget in
+					// Scripts / import required in the <head/> of the document:
+					//    <script src="../../webcomponentsjs/webcomponents-lite.js"/>
+					//    <link rel="import" href="../kul-widget.html">
+					let URLParams = utils.URLParams()
+					let Widget = document.querySelector('dom-bind')
+					Widget.set('configId', URLParams['id'])
+					Widget.set('modelId', URLParams['model'])							
+				</script>
+			</template>
+		</demo-snippet>
+	</div>
+</body>
+
+</html>

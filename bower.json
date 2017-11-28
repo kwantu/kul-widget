@@ -1,0 +1,20 @@
+{
+  "name": "kul-widget",
+  "description": "Kwantu Compnent Widget",
+  "main": "kul-widget.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.0.0",
+    "pouchdb": "^6.3.4",
+    "elements": "*",
+    "utils": "*",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
+    "web-component-tester": "^6.0.0-prerelease.5",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.5"
+  },
+  "resolutions": {
+    "polymer": "1.8"
+  }
+}
