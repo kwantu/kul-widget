@@ -32,7 +32,8 @@ Polymer({
         console.log('configId: ', this.configId)
         console.log('modelId: ', this.modelId)
         // Get the config file from the database
-        let database = new PouchDB('http://localhost:5984/config')
+        let database = new PouchDB('config')
+        // let database = new PouchDB('http://localhost:5984/config')
         // database.replicate.to('http://localhost:5984/config')
         let CONFIG = {}
         let SETTINGS = {}
